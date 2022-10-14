@@ -20,7 +20,7 @@ def predict():
             pred_args=[var_1,var_2]
             pred_arr=np.array(pred_args)
             preds=pred_arr.reshape(1, -1)
-            modelo=open("./naivebayes.pkl","rb")
+            modelo=open("./Modelobosques.pkl","rb")
             modelo_class=joblib.load(modelo)
             prediccion_modelo=modelo_class.predict(preds)
             prediccion_modelo=round(float(prediccion_modelo),2)
